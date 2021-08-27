@@ -1,0 +1,315 @@
+@import url(./../typography.css);
+@import "./../color.scss";
+
+/*========================================
+            Common Styles
+========================================*/
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: "montserrat-regular";
+    margin: 0;
+    user-select: none;
+}
+
+/*========================================
+          Utility Classes
+========================================*/
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    overflow: hidden;
+}
+
+/*==================================
+           Desktop
+==================================*/
+
+/* || Navbar ****************/
+
+.navbar-fluid {
+    background-color: $background-fill;
+    .navbar-container {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        .navbar-brand {
+            width: 33%;
+            .title {
+                color: $text-color;
+                cursor: pointer;
+                width: fit-content;
+            }
+        }
+        .navbar-collapse-icon {
+            display: none;
+            cursor: pointer;
+            [class^="line-"] {
+                height: 4px;
+                width: 22px;
+                border-radius: 6px;
+                background-color: $secondary-text-color;
+            }
+            :nth-child(n + 2) {
+                margin-top: 3px;
+            }
+        }
+        .navbar-collapse {
+            display: flex;
+            width: 100%;
+            align-items: center;
+            .left-list {
+                flex-grow: 1;
+                .nav-link {
+                    color: $secondary-text-color;
+                    margin-right: 20px;
+                    text-decoration: none;
+                    &:hover {
+                        color: $hover-color;
+                    }
+                }
+            }
+            .right-list {
+                .btn-login {
+                    color: $primary-color;
+                    margin-right: 20px;
+                    text-decoration: none;
+                }
+                .btn-subscribe {
+                    padding: 10px 25px;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    color: $light-text-color;
+                    background-color: $primary-color;
+                    border: none;
+                    .btn-title {
+                        margin-right: 4px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* || Main Section ****************/
+
+.welcome-fluid {
+    background: url(./../../assets/img/blob-left.png);
+    background-color: $background-fill;
+    background-repeat: no-repeat;
+    background-position: 0% 10%;
+    background-size: auto;
+    .welcome-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 20px;
+        .section-left {
+            width: 45%;
+            .section-heading {
+                color: $text-color;
+            }
+            .section-paragraph {
+                color: $secondary-text-color;
+            }
+            .section-actions {
+                display: flex;
+                .btn-quotes {
+                    cursor: pointer;
+                    padding: 16px 32px;
+                    background-color: $primary-color;
+                    color: $light-text-color;
+                    border-radius: 36px;
+                    border: none;
+                    margin-right: 10px;
+                }
+                .btn-learn {
+                    cursor: pointer;
+                    padding: 16px 32px;
+                    color: $primary-color;
+                    border-radius: 36px;
+                    background-color: white;
+                    border: solid 1px $primary-color;
+                }
+            }
+        }
+        .section-right {
+            width: 45%;
+            .section-image {
+                background: url(./../../assets/img/blob.png), url(./../../assets/img/blob-light.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+                padding: 48px 20px;
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+/* || Quality Section ****************/
+
+.quality-fluid {
+    .quality-container {
+        .section-heading {
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            margin-top: 160px;
+            margin-bottom: 80px;
+            max-width: 500px;
+            .section-title {
+                color: $text-color;
+                margin: 0;
+            }
+            .section-subtitle {
+                color: $secondary-text-color;
+            }
+        }
+        .section-body {
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            margin-bottom: 160px;
+            color: $text-color;
+            .section-card {
+                border-radius: 4px;
+                padding-top: 30px;
+                width: 30%;
+                background-color: $background-fill;
+                border: solid 1px $card-stroke;
+            }
+            .section-card-active {
+                border-radius: 4px;
+                padding-top: 30px;
+                width: 30%;
+                background-color: $primary-color;
+                h5 {
+                    color: $light-text-color;
+                }
+            }
+        }
+    }
+}
+
+/*==================================
+           PHONES & TABLETS
+==================================*/
+
+@media screen and (max-width: 768px) {
+    /* || Navbar ****************/
+    .navbar-fluid {
+        .navbar-container {
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .navbar-collapse-icon {
+                display: block;
+            }
+            .navbar-collapse {
+                display: none;
+                flex-direction: column;
+                text-align: center;
+                .left-list {
+                    flex-grow: 0;
+                    .nav-link {
+                        display: block;
+                        margin-right: 0px;
+                        padding: 16px 0px;
+                    }
+                }
+                .right-list {
+                    margin: 24px 0px;
+                    .btn-login {
+                        margin-right: 0px;
+                    }
+                    .btn-subscribe {
+                        display: block;
+                        margin: 32px 0px;
+                    }
+                }
+                .menu-md {
+                    font-family: "montserrat-regular";
+                    font-size: 24px;
+                    line-height: 45px;
+                    letter-spacing: 0.2px;
+                }
+            }
+        }
+    }
+
+    /* || Main Section ****************/
+
+    .welcome-fluid {
+        background-color: $light-text-color;
+        background-position: -150px 0%;
+        .welcome-container {
+            margin: 40px 0px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+            .section-left {
+                max-width: 480px;
+                width: 100%;
+                .main-heading {
+                    font-family: "montserrat-bold";
+                    font-size: 40px;
+                    line-height: 57px;
+                    letter-spacing: 0.2px;
+                }
+                .section-actions {
+                    flex-direction: column;
+                }
+                .section-actions > button {
+                    margin: 10px 20px;
+                }
+            }
+            .section-right {
+                width: 100%;
+                .section-image {
+                    background: url(./../../assets/img/blob.png), url(./../../assets/img/blob-light.png);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: contain;
+                    padding: 48px 20px;
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+    /* || Quality Section ****************/
+    .quality-fluid {
+        .quality-container {
+            .section-body {
+                flex-direction: column;
+                .section-card,
+                .section-card-active {
+                    width: 100%;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}
+
+/********* TODO : Collapse Button Fix *********/
+
+@media screen and (min-width: 769px) {
+    .navbar-fluid {
+        .navbar-container {
+            .navbar-collapse {
+                display: flex !important;
+            }
+        }
+    }
+}

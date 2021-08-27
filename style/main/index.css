@@ -1,0 +1,372 @@
+@import url(./../typography.css);
+/*==================================
+            Colors
+==================================*/
+/*========================================
+            Common Styles
+========================================*/
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "montserrat-regular";
+  margin: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+/*========================================
+          Utility Classes
+========================================*/
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  overflow: hidden;
+}
+
+/*==================================
+           Desktop
+==================================*/
+/* || Navbar ****************/
+.navbar-fluid {
+  background-color: #fafafa;
+}
+
+.navbar-fluid .navbar-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar-fluid .navbar-container .navbar-brand {
+  width: 33%;
+}
+
+.navbar-fluid .navbar-container .navbar-brand .title {
+  color: #252b42;
+  cursor: pointer;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.navbar-fluid .navbar-container .navbar-collapse-icon {
+  display: none;
+  cursor: pointer;
+}
+
+.navbar-fluid .navbar-container .navbar-collapse-icon [class^="line-"] {
+  height: 4px;
+  width: 22px;
+  border-radius: 6px;
+  background-color: #737373;
+}
+
+.navbar-fluid .navbar-container .navbar-collapse-icon :nth-child(n + 2) {
+  margin-top: 3px;
+}
+
+.navbar-fluid .navbar-container .navbar-collapse {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar-fluid .navbar-container .navbar-collapse .left-list {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.navbar-fluid .navbar-container .navbar-collapse .left-list .nav-link {
+  color: #737373;
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+.navbar-fluid .navbar-container .navbar-collapse .left-list .nav-link:hover {
+  color: #2a7cc7;
+}
+
+.navbar-fluid .navbar-container .navbar-collapse .right-list .btn-login {
+  color: #23a6f0;
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+.navbar-fluid .navbar-container .navbar-collapse .right-list .btn-subscribe {
+  padding: 10px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #23a6f0;
+  border: none;
+}
+
+.navbar-fluid .navbar-container .navbar-collapse .right-list .btn-subscribe .btn-title {
+  margin-right: 4px;
+}
+
+/* || Main Section ****************/
+.welcome-fluid {
+  background: url(./../../assets/img/blob-left.png);
+  background-color: #fafafa;
+  background-repeat: no-repeat;
+  background-position: 0% 10%;
+  background-size: auto;
+}
+
+.welcome-fluid .welcome-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 20px;
+}
+
+.welcome-fluid .welcome-container .section-left {
+  width: 45%;
+}
+
+.welcome-fluid .welcome-container .section-left .section-heading {
+  color: #252b42;
+}
+
+.welcome-fluid .welcome-container .section-left .section-paragraph {
+  color: #737373;
+}
+
+.welcome-fluid .welcome-container .section-left .section-actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.welcome-fluid .welcome-container .section-left .section-actions .btn-quotes {
+  cursor: pointer;
+  padding: 16px 32px;
+  background-color: #23a6f0;
+  color: #ffffff;
+  border-radius: 36px;
+  border: none;
+  margin-right: 10px;
+}
+
+.welcome-fluid .welcome-container .section-left .section-actions .btn-learn {
+  cursor: pointer;
+  padding: 16px 32px;
+  color: #23a6f0;
+  border-radius: 36px;
+  background-color: white;
+  border: solid 1px #23a6f0;
+}
+
+.welcome-fluid .welcome-container .section-right {
+  width: 45%;
+}
+
+.welcome-fluid .welcome-container .section-right .section-image {
+  background: url(./../../assets/img/blob.png), url(./../../assets/img/blob-light.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  padding: 48px 20px;
+  max-width: 100%;
+}
+
+/* || Quality Section ****************/
+.quality-fluid .quality-container .section-heading {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 160px;
+  margin-bottom: 80px;
+  max-width: 500px;
+}
+
+.quality-fluid .quality-container .section-heading .section-title {
+  color: #252b42;
+  margin: 0;
+}
+
+.quality-fluid .quality-container .section-heading .section-subtitle {
+  color: #737373;
+}
+
+.quality-fluid .quality-container .section-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+  margin-bottom: 160px;
+  color: #252b42;
+}
+
+.quality-fluid .quality-container .section-body .section-card {
+  border-radius: 4px;
+  padding-top: 30px;
+  width: 30%;
+  background-color: #fafafa;
+  border: solid 1px #e9e9e9;
+}
+
+.quality-fluid .quality-container .section-body .section-card-active {
+  border-radius: 4px;
+  padding-top: 30px;
+  width: 30%;
+  background-color: #23a6f0;
+}
+
+.quality-fluid .quality-container .section-body .section-card-active h5 {
+  color: #ffffff;
+}
+
+/*==================================
+           PHONES & TABLETS
+==================================*/
+@media screen and (max-width: 768px) {
+  /* || Navbar ****************/
+  .navbar-fluid .navbar-container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .navbar-fluid .navbar-container .navbar-collapse-icon {
+    display: block;
+  }
+  .navbar-fluid .navbar-container .navbar-collapse {
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .navbar-fluid .navbar-container .navbar-collapse .left-list {
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+  }
+  .navbar-fluid .navbar-container .navbar-collapse .left-list .nav-link {
+    display: block;
+    margin-right: 0px;
+    padding: 16px 0px;
+  }
+  .navbar-fluid .navbar-container .navbar-collapse .right-list {
+    margin: 24px 0px;
+  }
+  .navbar-fluid .navbar-container .navbar-collapse .right-list .btn-login {
+    margin-right: 0px;
+  }
+  .navbar-fluid .navbar-container .navbar-collapse .right-list .btn-subscribe {
+    display: block;
+    margin: 32px 0px;
+  }
+  .navbar-fluid .navbar-container .navbar-collapse .menu-md {
+    font-family: "montserrat-regular";
+    font-size: 24px;
+    line-height: 45px;
+    letter-spacing: 0.2px;
+  }
+  /* || Main Section ****************/
+  .welcome-fluid {
+    background-color: #ffffff;
+    background-position: -150px 0%;
+  }
+  .welcome-fluid .welcome-container {
+    margin: 40px 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .welcome-fluid .welcome-container .section-left {
+    max-width: 480px;
+    width: 100%;
+  }
+  .welcome-fluid .welcome-container .section-left .main-heading {
+    font-family: "montserrat-bold";
+    font-size: 40px;
+    line-height: 57px;
+    letter-spacing: 0.2px;
+  }
+  .welcome-fluid .welcome-container .section-left .section-actions {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .welcome-fluid .welcome-container .section-left .section-actions > button {
+    margin: 10px 20px;
+  }
+  .welcome-fluid .welcome-container .section-right {
+    width: 100%;
+  }
+  .welcome-fluid .welcome-container .section-right .section-image {
+    background: url(./../../assets/img/blob.png), url(./../../assets/img/blob-light.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding: 48px 20px;
+    max-width: 100%;
+  }
+  /* || Quality Section ****************/
+  .quality-fluid .quality-container .section-body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .quality-fluid .quality-container .section-body .section-card,
+  .quality-fluid .quality-container .section-body .section-card-active {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+/********* TODO : Collapse Button Fix *********/
+@media screen and (min-width: 769px) {
+  .navbar-fluid .navbar-container .navbar-collapse {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+}
+/*# sourceMappingURL=index.css.map */
